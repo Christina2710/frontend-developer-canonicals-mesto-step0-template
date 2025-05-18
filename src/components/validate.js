@@ -67,4 +67,3 @@ function enableValidation(settings) {
     setEventListeners(formElement, settings);
   });
 }
-
