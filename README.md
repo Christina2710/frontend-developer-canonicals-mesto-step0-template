@@ -36,7 +36,7 @@
 
 ```bash
 git clone https://github.com/christina2710/frontend-developer-canonicals-mesto-step0-template.git
-cd mesto
+cd frontend-developer-canonicals-mesto-step0-template
 npm install
 npm run dev    # Запуск в режиме разработки
 npm run build  # Сборка проекта

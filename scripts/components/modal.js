@@ -1,5 +1,5 @@
 export { openModal, closeModal };
-import { hideInputError } from './validate.js';
+import { hideInputError } from "./validate.js";
 
 // Закрытие модального окна через клавишу Escape
 function closeByEsc(evt) {
@@ -23,8 +23,12 @@ function openModal(popup, settings) {
   document.addEventListener("click", closeByOverlay);
 
   const inputList = Array.from(popup.querySelectorAll(settings.inputSelector));
-  inputList.forEach(function(inputElement) {
-    hideInputError(inputElement, popup.querySelector(settings.formSelector), settings);
+  inputList.forEach(function (inputElement) {
+    hideInputError(
+      inputElement,
+      popup.querySelector(settings.formSelector),
+      settings
+    );
   });
 }
 

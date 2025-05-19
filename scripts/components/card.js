@@ -1,6 +1,6 @@
 export { createCard };
 import { openModal } from "./modal.js";
-import { deleteCard, likeCard, unlikeCard } from "./api.js";
+import { deleteCard, likeCard, unlikeCard } from "../utils/api.js";
 
 // Функция создания новой карточки
 function createCard(card, cardTemplate, settings) {

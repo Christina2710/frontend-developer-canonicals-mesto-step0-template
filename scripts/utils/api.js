@@ -9,14 +9,7 @@ export {
   updateAvatar,
 };
 
-// Конфигурация API
-const config = {
-  baseUrl: "https://nomoreparties.co/v1/apf-cohort-202",
-  headers: {
-    authorization: "cf67af65-21af-4abb-8e09-925358f82c03",
-    "Content-Type": "application/json",
-  },
-};
+import { config } from "./constants.js";
 
 function checkResponse(res) {
   if (res.ok) {
